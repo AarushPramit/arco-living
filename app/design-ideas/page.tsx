@@ -174,7 +174,7 @@ export default function DesignIdeas() {
     {/* IMAGE 1 */}
     <div className="relative w-full aspect-[4/5] overflow-hidden">
       <Image
-        src="/images/img4.png"
+        src="/images/img1.jpg"
         alt="Arco Living interior"
         fill
         className="object-cover"

@@ -165,7 +165,7 @@ export default function Home() {
               "
             >
               <Image
-                src="/images/img4.png"
+                src="/images/img1.jpg"
                 alt="Arco Living interior project"
                 fill
                 className="object-cover"
