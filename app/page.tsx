@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import AnimatedTaglines from "@/components/ui/animated-taglines";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -427,22 +428,20 @@ export default function Home() {
 
       {/* DISCOVER - RIGHT SIDE */}
       <div className="md:pt-4 shrink-0">
-
-        <button
+        <Link
+          href="/design-ideas"
           className="
             group
             inline-flex
             items-center
             gap-3
             font-[family-name:var(--font-dm-sans)]
-            text-base
-            md:text-lg
+            text-sm
+            md:text-base
             text-white
           "
         >
-
           <span className="relative">
-
             Discover
 
             <span
@@ -458,13 +457,12 @@ export default function Home() {
                 group-hover:w-full
               "
             />
-
           </span>
 
           <span
             className="
-              text-xl
-              md:text-2xl
+              text-lg
+              md:text-xl
               transition-transform
               duration-300
               group-hover:translate-x-1
@@ -473,9 +471,7 @@ export default function Home() {
           >
             ↗
           </span>
-
-        </button>
-
+        </Link>
       </div>
 
     </div>

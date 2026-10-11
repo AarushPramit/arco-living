@@ -31,10 +31,10 @@ export default function Navbar() {
   }, [lastScroll]);
 
   const navItems = [
-    "Home",
-    "Design Ideas",
-    "Magazine",
-    "Projects",
+    { name: "Home", href: "/" },
+    { name: "Design Ideas", href: "/design-ideas" },
+    { name: "Magazine", href: "/magazine" },
+    { name: "Projects", href: "/projects" },
   ];
 
   return (
@@ -78,8 +78,8 @@ export default function Navbar() {
 
               {navItems.map((item) => (
                 <Link
-                  key={item}
-                  href="#"
+                  key={item.name}
+                  href={item.href}
                   className="
                     group
                     relative
@@ -91,7 +91,7 @@ export default function Navbar() {
                     whitespace-nowrap
                   "
                 >
-                  {item}
+                  {item.name}
 
                   {/* Hover underline */}
                   <span
@@ -400,7 +400,7 @@ export default function Navbar() {
             >
               {navItems.map((item, index) => (
                 <motion.div
-                  key={item}
+                  key={item.name}
                   initial={{
                     y: 15,
                     opacity: 0,
@@ -415,7 +415,7 @@ export default function Navbar() {
                   }}
                 >
                   <Link
-                    href="#"
+                    href={item.href}
                     onClick={() => setOpen(false)}
                     className="
                       font-[family-name:var(--font-dm-sans)]
@@ -425,7 +425,7 @@ export default function Navbar() {
                       text-white
                     "
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 </motion.div>
               ))}
