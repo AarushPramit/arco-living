@@ -165,7 +165,7 @@ export default function Home() {
               "
             >
               <Image
-                src="/images/img4.jpg"
+                src="/images/img4.png"
                 alt="Arco Living interior project"
                 fill
                 className="object-cover"
@@ -379,29 +379,33 @@ export default function Home() {
   <div className="mb-16 md:mb-20">
 
     {/* Heading + Discover */}
-    <div className="
-      flex
-      flex-col
-      md:flex-row
-      md:items-start
-      md:justify-between
-      gap-8
-    ">
+    <div
+      className="
+        flex
+        flex-col
+        md:flex-row
+        md:items-start
+        md:justify-between
+        gap-8
+      "
+    >
 
       {/* LEFT SIDE */}
-      <div className="max-w-3xl">
+      <div className="max-w-3xl min-w-0">
 
         {/* Heading */}
         <h2
           className="
             font-[family-name:var(--font-manrope)]
-            text-[52px]
-            sm:text-[64px]
+            text-[clamp(32px,8.5vw,52px)]
+            sm:text-[52px]
             md:text-[72px]
             lg:text-[82px]
             leading-[0.95]
             tracking-[-0.06em]
             text-white
+            max-w-full
+            break-words
           "
         >
           Less.More.Yours
@@ -424,7 +428,6 @@ export default function Home() {
         </p>
 
       </div>
-
 
       {/* DISCOVER - RIGHT SIDE */}
       <div className="md:pt-4 shrink-0">
